@@ -1,0 +1,48 @@
+{
+  "name": {
+    "tr": "Stüdyo",
+    "en": "Studio",
+    "ar": "الاستوديو"
+  },
+  "status": "play",
+  "category": "",
+  "id": "hakkimizda",
+  "url": "",
+  "path": "hakkimizda",
+  "index": 1,
+  "icon": "info",
+  "desing": {
+    "header": [],
+    "body": [
+      "otmz7u",
+      "vqcxxf",
+      "obdshe"
+    ],
+    "footer": []
+  },
+  "pathnext": "",
+  "description": {
+    "tr": "Eğitmenler ve gösteri destekçileri (kurgusal).",
+    "en": "Instructors and show supporters (fictional).",
+    "ar": "المدرّبون وداعمو العرض (افتراضي)."
+  },
+  "spot": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "desc": {},
+  "title": {
+    "tr": "Stüdyo",
+    "en": "Studio",
+    "ar": "الاستوديو"
+  },
+  "keyword": {
+    "tr": "hakkımızda",
+    "en": "about",
+    "ar": "من نحن"
+  },
+  "text": {},
+  "update": "2026-11-16T18:05:45.388Z",
+  "date": "2026-10-30"
+}

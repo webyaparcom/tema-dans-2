@@ -1,0 +1,114 @@
+{
+  "data": [
+    {
+      "id": "nv3sr3rsz2",
+      "name": {
+        "tr": "Dersler",
+        "en": "Classes",
+        "ar": "الدروس"
+      },
+      "description": {
+        "tr": "Dans stilleri haritası ve ücretler (kurgusal).",
+        "en": "Dance style map and fees (fictional).",
+        "ar": "خريطة أنماط الرقص والرسوم (افتراضية)."
+      },
+      "path": "hizmetler",
+      "icon": "work",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "p105vp",
+          "twjlwn",
+          "obdshe"
+        ],
+        "footer": []
+      },
+      "index": 0
+    },
+    {
+      "name": {
+        "tr": "Stüdyo",
+        "en": "Studio",
+        "ar": "الاستوديو"
+      },
+      "status": "play",
+      "id": "hakkimizda",
+      "path": "hakkimizda",
+      "category": "",
+      "url": "",
+      "index": 1,
+      "icon": "info",
+      "desing": {
+        "header": [],
+        "body": [
+          "otmz7u",
+          "vqcxxf",
+          "obdshe"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "Eğitmenler ve gösteri destekçileri (kurgusal).",
+        "en": "Instructors and show supporters (fictional).",
+        "ar": "المدرّبون وداعمو العرض (افتراضي)."
+      }
+    },
+    {
+      "id": "cw2dtgwkar",
+      "name": {
+        "tr": "Program",
+        "en": "Schedule",
+        "ar": "البرنامج"
+      },
+      "description": {
+        "tr": "Haftalık ders programı ve deneme dersi talebi (demo).",
+        "en": "Weekly class schedule and trial-class request (demo).",
+        "ar": "برنامج الدروس الأسبوعي وطلب درس تجريبي (تجريبي)."
+      },
+      "path": "teklif-al",
+      "icon": "calendar_month",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "k6ovcl"
+        ],
+        "footer": []
+      },
+      "index": 2
+    },
+    {
+      "name": {
+        "tr": "İletişim",
+        "en": "Contact",
+        "ar": "اتصل بنا"
+      },
+      "status": "play",
+      "id": "iletisim",
+      "path": "iletisim",
+      "category": "",
+      "url": "",
+      "index": 3,
+      "icon": "call",
+      "desing": {
+        "header": [],
+        "body": [
+          "fbklxj",
+          "k8mp01"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "Adres, telefon ve çalışma saatleri.",
+        "en": "Address, phone and opening hours.",
+        "ar": "العنوان والهاتف وساعات العمل."
+      }
+    }
+  ],
+  "desc": []
+}

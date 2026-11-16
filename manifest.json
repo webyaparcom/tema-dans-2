@@ -1,0 +1,29 @@
+{
+  "name": "Kadife Dans",
+  "short_name": "Kadife Dans",
+  "description": "Kadife Dans Stüdyosu: Gaziantep’te salsa, bachata, Arjantin tangosu, çağdaş dans, hip-hop ve çocuk balesi. Haftalık programdan seans seçin, ilk deneme dersi ücretsiz. Demo site; içerik kurgusaldır.",
+  "start_url": "/tr/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#A64A84",
+  "lang": "tr",
+  "icons": [
+    {
+      "src": "/img/icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/icon.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
