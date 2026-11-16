@@ -1,0 +1,41 @@
+{
+  "id": "nv3sr3rsz2",
+  "name": {
+    "tr": "Dersler",
+    "en": "Classes",
+    "ar": "الدروس"
+  },
+  "description": {
+    "tr": "Dans stilleri haritası ve ücretler (kurgusal).",
+    "en": "Dance style map and fees (fictional).",
+    "ar": "خريطة أنماط الرقص والرسوم (افتراضية)."
+  },
+  "keyword": {
+    "tr": "Dersler",
+    "en": "Classes",
+    "ar": "الدروس"
+  },
+  "path": "hizmetler",
+  "icon": "work",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "p105vp",
+      "twjlwn",
+      "obdshe"
+    ],
+    "footer": []
+  },
+  "index": 0,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Dersler",
+    "en": "Classes",
+    "ar": "الدروس"
+  },
+  "date": "2026-11-16T18:02:14.614Z",
+  "update": "2026-11-16T18:05:45.384Z"
+}

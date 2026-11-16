@@ -1,0 +1,148 @@
+<section class="modulex-fiyat-bilet-kocan{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-fiyat-bilet-kocan-ic">
+    {{fbbas}}
+    {{fbgovde}}
+  </div>
+</section>
+
+<style>
+  /* fiyat-bilet-kocan — fiyat-yatay-satir satır listesi, fiyat-one-cikan-panel büyük panel + yan liste, fiyat-sekmeli-secici sekmeli tek paneldir; bu modül paketleri delikli koçanlı bilet biçimine döker (çentik + kesik çizgi + barkod) ve bilet başına adet sayacıyla toplam hesaplar — ailede adet/toplam etkileşimi ve bilet iskeleti yok. */
+  .modulex-fiyat-bilet-kocan { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --text--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-fiyat-bilet-kocan *, .modulex-fiyat-bilet-kocan *::before, .modulex-fiyat-bilet-kocan *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-fiyat-bilet-kocan :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-fiyat-bilet-kocan :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-fiyat-bilet-kocan :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-fiyat-bilet-kocan :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-fiyat-bilet-kocan img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-fiyat-bilet-kocan) img { height: auto; }
+  .modulex-fiyat-bilet-kocan [hidden] { display: none !important; }
+  .modulex-fiyat-bilet-kocan :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-fiyat-bilet-kocan :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-fiyat-bilet-kocan-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-fiyat-bilet-kocan-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-fiyat-bilet-kocan--bassiz .modulex-fiyat-bilet-kocan-bas { display: none; }
+  .modulex-fiyat-bilet-kocan-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-fiyat-bilet-kocan-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-fiyat-bilet-kocan-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-fiyat-bilet-kocan-bas { max-width: 780px; margin-inline: auto; text-align: center; justify-items: center; }
+  .modulex-fiyat-bilet-kocan-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-fiyat-bilet-kocan-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-fiyat-bilet-kocan-dugme:hover { transform: translateY(-2px); }
+  .modulex-fiyat-bilet-kocan-dugme--ikincil { background: transparent; color: --text--; border-color: --cizgi--; }
+  .modulex-fiyat-bilet-kocan-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-fiyat-bilet-kocan-dugme .material-symbols-outlined { font-size: 20px; }
+
+  .modulex-fiyat-bilet-kocan-tutar { font-family: var(--mx-font-heading, inherit); font-size: clamp(2rem, 3.6vw, 2.8rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1; font-variant-numeric: tabular-nums; }
+  .modulex-fiyat-bilet-kocan-donem { margin-inline-start: 6px; color: --muted--; font-size: 0.95rem; font-weight: 600; }
+  .modulex-fiyat-bilet-kocan-fiyat { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px; }
+  .modulex-fiyat-bilet-kocan-pad { font-size: 1.2rem; font-weight: 750; letter-spacing: -0.01em; }
+  .modulex-fiyat-bilet-kocan-not { color: --muted--; }
+  .modulex-fiyat-bilet-kocan-oz { display: grid; gap: 10px; }
+  .modulex-fiyat-bilet-kocan-oz li { display: flex; align-items: flex-start; gap: 10px; line-height: 1.5; }
+  .modulex-fiyat-bilet-kocan-oz .material-symbols-outlined { flex: none; display: inline-grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: color-mix(in srgb, --accent-- 14%, transparent); color: --accentInk--; font-size: 16px; }
+  .modulex-fiyat-bilet-kocan-rozet { display: inline-flex; align-items: center; justify-self: start; min-height: 28px; padding: 4px 12px; border-radius: 999px; background: --accent--; color: --accentText--; font-size: 0.78rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; }
+  .modulex-fiyat-bilet-kocan-pcta { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: transparent; color: --text--; font-weight: 700; text-decoration: none; transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease; }
+  .modulex-fiyat-bilet-kocan-pcta:hover { background: --accent--; color: --accentText--; transform: translateY(-2px); }
+  .modulex-fiyat-bilet-kocan-pcta .material-symbols-outlined { font-size: 20px; }
+
+  .modulex-fiyat-bilet-kocan-biletler { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 26px; align-items: stretch; }
+  .modulex-fiyat-bilet-kocan-bilet { position: relative; display: grid; grid-template-rows: minmax(0, 1fr) auto; border-radius: 20px; background: --kartBg--; box-shadow: 0 22px 40px -30px color-mix(in srgb, --text-- 70%, transparent); transition: transform 0.35s ease; }
+  .modulex-fiyat-bilet-kocan-bilet:hover { transform: translateY(-4px); }
+  .modulex-fiyat-bilet-kocan-bgovde { position: relative; display: grid; align-content: start; gap: 12px; padding: 28px 26px 24px; }
+  .modulex-fiyat-bilet-kocan-bikon { display: grid; place-items: center; width: 50px; height: 50px; border-radius: 14px; background: color-mix(in srgb, --accent-- 14%, --bg--); color: --accentInk--; font-size: 26px; }
+  .modulex-fiyat-bilet-kocan-bad { font-size: 1.35rem; font-weight: 800; letter-spacing: -0.01em; }
+  .modulex-fiyat-bilet-kocan-bnot { color: --muted--; font-size: 0.95rem; }
+  .modulex-fiyat-bilet-kocan-muhur { position: absolute; inset-block-start: 22px; inset-inline-end: 20px; padding: 6px 12px; border: 2px dashed --accent--; border-radius: 10px; color: --accentInk--; font-size: 0.75rem; font-weight: 850; letter-spacing: 0.1em; text-transform: uppercase; transform: rotate(8deg); }
+  .modulex-fiyat-bilet-kocan-kocan { position: relative; display: grid; gap: 14px; padding: 24px 26px 22px; border-block-start: 2px dashed --cizgi--; border-radius: 0 0 20px 20px; background: color-mix(in srgb, --accent-- 6%, --kartBg--); transform-origin: 0 0; transition: transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1); }
+  .modulex-fiyat-bilet-kocan-kocan::before, .modulex-fiyat-bilet-kocan-kocan::after { content: ""; position: absolute; inset-block-start: -13px; width: 24px; height: 24px; border-radius: 50%; background: --bg--; }
+  .modulex-fiyat-bilet-kocan-kocan::before { inset-inline-start: -12px; }
+  .modulex-fiyat-bilet-kocan-kocan::after { inset-inline-end: -12px; }
+  .modulex-fiyat-bilet-kocan-bilet:hover .modulex-fiyat-bilet-kocan-kocan { transform: translateY(5px) rotate(-1.5deg); }
+  [dir="rtl"] .modulex-fiyat-bilet-kocan-bilet:hover .modulex-fiyat-bilet-kocan-kocan { transform: translateY(5px) rotate(1.5deg); }
+  .modulex-fiyat-bilet-kocan-bilet--vurgu { box-shadow: 0 0 0 2px --accent--, 0 26px 44px -30px color-mix(in srgb, --text-- 70%, transparent); }
+  .modulex-fiyat-bilet-kocan-bilet--vurgu .modulex-fiyat-bilet-kocan-kocan { background: --vurguBg--; color: --vurguText--; }
+  .modulex-fiyat-bilet-kocan-bilet--vurgu .modulex-fiyat-bilet-kocan-kocan .modulex-fiyat-bilet-kocan-donem, .modulex-fiyat-bilet-kocan-bilet--vurgu .modulex-fiyat-bilet-kocan-btoplam { color: --vurguText--; }
+  .modulex-fiyat-bilet-kocan-bfiyat { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 8px; }
+  .modulex-fiyat-bilet-kocan-bfiyat .modulex-fiyat-bilet-kocan-donem { margin-inline-start: 0; }
+  .modulex-fiyat-bilet-kocan-adet { display: inline-flex; align-items: center; justify-self: start; gap: 6px; padding: 4px; border: 1px solid --cizgi--; border-radius: 999px; background: --bg--; color: --text--; }
+  .modulex-fiyat-bilet-kocan:not(.modulex-fiyat-bilet-kocan--bkjs) .modulex-fiyat-bilet-kocan-adet, .modulex-fiyat-bilet-kocan:not(.modulex-fiyat-bilet-kocan--bkjs) .modulex-fiyat-bilet-kocan-btoplam { display: none; }
+  .modulex-fiyat-bilet-kocan-adim { display: grid; place-items: center; width: 34px; height: 34px; padding: 0; border: 0; border-radius: 50%; background: transparent; color: --text--; transition: background-color 0.2s ease, color 0.2s ease; }
+  .modulex-fiyat-bilet-kocan-adim:hover:not(:disabled) { background-color: --accent--; color: --accentText--; }
+  .modulex-fiyat-bilet-kocan-adim:disabled { cursor: default; color: --muted--; }
+  .modulex-fiyat-bilet-kocan-adim .material-symbols-outlined { font-size: 18px; }
+  .modulex-fiyat-bilet-kocan-asay { min-width: 2.2ch; font-weight: 800; text-align: center; font-variant-numeric: tabular-nums; }
+  .modulex-fiyat-bilet-kocan-btoplam { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; color: --muted--; font-size: 0.9rem; font-weight: 700; }
+  .modulex-fiyat-bilet-kocan-btoplam strong { color: inherit; font-size: 1.15rem; font-weight: 850; font-variant-numeric: tabular-nums; transition: transform 0.25s ease; }
+  .modulex-fiyat-bilet-kocan-bilet--cok .modulex-fiyat-bilet-kocan-btoplam strong { transform: scale(1.06); }
+  .modulex-fiyat-bilet-kocan-bcta { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 12px 20px; border-radius: 12px; background: --text--; color: --bg--; font-weight: 750; text-decoration: none; transition: transform 0.25s ease, background-color 0.25s ease; }
+  .modulex-fiyat-bilet-kocan-bcta:hover { transform: translateY(-2px); background-color: color-mix(in srgb, --text-- 82%, --accent--); }
+  .modulex-fiyat-bilet-kocan-bilet--vurgu .modulex-fiyat-bilet-kocan-bcta { background: --vurguText--; color: --vurguBg--; }
+  .modulex-fiyat-bilet-kocan-bcta .material-symbols-outlined { font-size: 20px; }
+  .modulex-fiyat-bilet-kocan-barkod { display: block; height: 30px; background-image: repeating-linear-gradient(90deg, currentColor 0 2px, transparent 2px 5px, currentColor 5px 6px, transparent 6px 9px, currentColor 9px 12px, transparent 12px 14px); opacity: 0.55; }
+  .modulex-fiyat-bilet-kocan-bilet--vurgu :focus-visible { outline-color: --vurguText--; }
+  @media (max-width: 768px) {
+    .modulex-fiyat-bilet-kocan-biletler { gap: 22px; }
+    .modulex-fiyat-bilet-kocan-bgovde { padding: 22px 20px 20px; }
+    .modulex-fiyat-bilet-kocan-kocan { padding: 20px; }
+    .modulex-fiyat-bilet-kocan-muhur { inset-block-start: 18px; }
+  }
+
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-fiyat-bilet-kocan :is(.modulex-fiyat-bilet-kocan-baslik, .modulex-fiyat-bilet-kocan-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-fiyat-bilet-kocan-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .modulex-fiyat-bilet-kocan { padding-inline: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .modulex-fiyat-bilet-kocan *, .modulex-fiyat-bilet-kocan *::before, .modulex-fiyat-bilet-kocan *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+<script>
+  (() => {
+    const P = "modulex-fiyat-bilet-kocan";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const biletAdet = (s, P) => {
+        const b = [...s.querySelectorAll("[data-bk]")];
+        if (!b.length) return;
+        s.classList.add(P + "--bkjs");
+        const kok = s.querySelector("[data-bk-para]");
+        const dl = document.documentElement.lang || undefined;
+        let pf = null;
+        let nf = null;
+        try { pf = new Intl.NumberFormat(dl, kok && kok.dataset.bkPara ? { style: "currency", currency: kok.dataset.bkPara, maximumFractionDigits: 0 } : { maximumFractionDigits: 0 }); } catch (x) { pf = null; }
+        try { nf = new Intl.NumberFormat(dl); } catch (x) { nf = null; }
+        b.forEach((k) => {
+          const t = Number(k.dataset.bk) || 0;
+          const say = k.querySelector("[data-bk-say]");
+          const top = k.querySelector("[data-bk-toplam]");
+          const eksi = k.querySelector("[data-bk-eksi]");
+          const bag = k.querySelector("[data-bk-bag]");
+          const taban = bag ? bag.getAttribute("href") || "" : "";
+          let n = 1;
+          const yaz = () => {
+            if (say) say.textContent = nf ? nf.format(n) : String(n);
+            if (top) top.textContent = pf ? pf.format(n * t) : String(n * t);
+            if (eksi) eksi.disabled = n <= 1;
+            k.classList.toggle(P + "-bilet--cok", n > 1);
+            if (!bag || !taban || taban === "#") return;
+            let u;
+            try { u = new URL(taban, location.href); } catch (x) { return; }
+            u.searchParams.set("adet", String(n));
+            bag.setAttribute("href", u.href);
+          };
+          k.querySelectorAll("[data-bk-eksi], [data-bk-arti]").forEach((d) => d.addEventListener("click", () => {
+            n = Math.max(1, Math.min(20, n + (d.hasAttribute("data-bk-arti") ? 1 : -1)));
+            yaz();
+          }));
+          yaz();
+        });
+      };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      biletAdet(s, P, az);
+    });
+  })();
+</script>
