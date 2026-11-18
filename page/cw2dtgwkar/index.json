@@ -3,17 +3,23 @@
   "name": {
     "tr": "Program",
     "en": "Schedule",
-    "ar": "البرنامج"
+    "ar": "البرنامج",
+    "de": "Programm",
+    "ru": "Расписание"
   },
   "description": {
     "tr": "Haftalık ders programı ve deneme dersi talebi (demo).",
     "en": "Weekly class schedule and trial-class request (demo).",
-    "ar": "برنامج الدروس الأسبوعي وطلب درس تجريبي (تجريبي)."
+    "ar": "برنامج الدروس الأسبوعي وطلب درس تجريبي (تجريبي).",
+    "de": "Wöchentlicher Stundenplan und Anfrage für eine Probestunde (Demo).",
+    "ru": "Недельное расписание и заявка на пробное занятие (демо)."
   },
   "keyword": {
     "tr": "ders programı",
     "en": "class schedule",
-    "ar": "برنامج الدروس"
+    "ar": "برنامج الدروس",
+    "de": "Stundenplan",
+    "ru": "расписание занятий"
   },
   "path": "teklif-al",
   "icon": "calendar_month",
@@ -32,7 +38,9 @@
   "title": {
     "tr": "Program",
     "en": "Schedule",
-    "ar": "البرنامج"
+    "ar": "البرنامج",
+    "de": "Programm",
+    "ru": "Расписание"
   },
   "date": "2026-11-16T18:02:14.624Z",
   "update": "2026-11-16T18:05:45.391Z"

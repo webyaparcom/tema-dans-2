@@ -3,17 +3,23 @@
   "name": {
     "tr": "Dersler",
     "en": "Classes",
-    "ar": "الدروس"
+    "ar": "الدروس",
+    "de": "Kurse",
+    "ru": "Занятия"
   },
   "description": {
     "tr": "Dans stilleri haritası ve ücretler (kurgusal).",
     "en": "Dance style map and fees (fictional).",
-    "ar": "خريطة أنماط الرقص والرسوم (افتراضية)."
+    "ar": "خريطة أنماط الرقص والرسوم (افتراضية).",
+    "de": "Karte der Tanzstile und Gebühren (fiktiv).",
+    "ru": "Карта стилей танца и тарифы (вымышленные)."
   },
   "keyword": {
     "tr": "Dersler",
     "en": "Classes",
-    "ar": "الدروس"
+    "ar": "الدروس",
+    "de": "Kurse",
+    "ru": "Занятия"
   },
   "path": "hizmetler",
   "icon": "work",
@@ -34,7 +40,9 @@
   "title": {
     "tr": "Dersler",
     "en": "Classes",
-    "ar": "الدروس"
+    "ar": "الدروس",
+    "de": "Kurse",
+    "ru": "Занятия"
   },
   "date": "2026-11-16T18:02:14.614Z",
   "update": "2026-11-16T18:05:45.384Z"

@@ -3,17 +3,23 @@
   "name": {
     "tr": "Misyon",
     "en": "Mission",
-    "ar": "المهمة"
+    "ar": "المهمة",
+    "de": "Mission",
+    "ru": "Миссия"
   },
   "description": {
     "tr": "Misyonumuz",
     "en": "Our mission",
-    "ar": "مهمتنا"
+    "ar": "مهمتنا",
+    "de": "Unsere Mission",
+    "ru": "Наша миссия"
   },
   "keyword": {
     "tr": "Misyon",
     "en": "mission, our mission, corporate responsibility",
-    "ar": "الرسالة, رسالتنا, المسؤولية المؤسسية"
+    "ar": "الرسالة, رسالتنا, المسؤولية المؤسسية",
+    "de": "Mission",
+    "ru": "Миссия"
   },
   "path": "misyon",
   "icon": "flag",
@@ -29,12 +35,16 @@
   "text": {
     "tr": "<h2>Misyonumuz</h2>\n<p>Her yaştan insana dansı küçük gruplarda, güvenli ve keyifli bir ortamda öğretmek.</p>",
     "en": "<h2>Our mission</h2>\n<p>To teach dance to people of all ages in small groups, in a safe and enjoyable setting.</p>",
-    "ar": "<h2>مهمتنا</h2>\n<p>تعليم الرقص لجميع الأعمار في مجموعات صغيرة وبيئة آمنة وممتعة.</p>"
+    "ar": "<h2>مهمتنا</h2>\n<p>تعليم الرقص لجميع الأعمار في مجموعات صغيرة وبيئة آمنة وممتعة.</p>",
+    "de": "<h2>Unsere Mission</h2>\n<p>Tanz für Menschen jeden Alters in kleinen Gruppen, in einer sicheren und angenehmen Umgebung zu unterrichten.</p>",
+    "ru": "<h2>Наша миссия</h2>\n<p>Учить танцам людей любого возраста в небольших группах в безопасной и приятной обстановке.</p>"
   },
   "title": {
     "tr": "Misyon",
     "en": "Mission",
-    "ar": "المهمة"
+    "ar": "المهمة",
+    "de": "Mission",
+    "ru": "Миссия"
   },
   "date": "2026-11-16T18:02:14.459Z",
   "update": "2026-11-16T18:05:45.400Z",

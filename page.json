@@ -5,12 +5,16 @@
       "name": {
         "tr": "Dersler",
         "en": "Classes",
-        "ar": "الدروس"
+        "ar": "الدروس",
+        "de": "Kurse",
+        "ru": "Занятия"
       },
       "description": {
         "tr": "Dans stilleri haritası ve ücretler (kurgusal).",
         "en": "Dance style map and fees (fictional).",
-        "ar": "خريطة أنماط الرقص والرسوم (افتراضية)."
+        "ar": "خريطة أنماط الرقص والرسوم (افتراضية).",
+        "de": "Karte der Tanzstile und Gebühren (fiktiv).",
+        "ru": "Карта стилей танца и тарифы (вымышленные)."
       },
       "path": "hizmetler",
       "icon": "work",
@@ -31,7 +35,9 @@
       "name": {
         "tr": "Stüdyo",
         "en": "Studio",
-        "ar": "الاستوديو"
+        "ar": "الاستوديو",
+        "de": "Studio",
+        "ru": "Студия"
       },
       "status": "play",
       "id": "hakkimizda",
@@ -53,7 +59,9 @@
       "description": {
         "tr": "Eğitmenler ve gösteri destekçileri (kurgusal).",
         "en": "Instructors and show supporters (fictional).",
-        "ar": "المدرّبون وداعمو العرض (افتراضي)."
+        "ar": "المدرّبون وداعمو العرض (افتراضي).",
+        "de": "Trainer und Förderer der Show (fiktiv).",
+        "ru": "Тренеры и спонсоры шоу (вымышленные)."
       }
     },
     {
@@ -61,12 +69,16 @@
       "name": {
         "tr": "Program",
         "en": "Schedule",
-        "ar": "البرنامج"
+        "ar": "البرنامج",
+        "de": "Programm",
+        "ru": "Расписание"
       },
       "description": {
         "tr": "Haftalık ders programı ve deneme dersi talebi (demo).",
         "en": "Weekly class schedule and trial-class request (demo).",
-        "ar": "برنامج الدروس الأسبوعي وطلب درس تجريبي (تجريبي)."
+        "ar": "برنامج الدروس الأسبوعي وطلب درس تجريبي (تجريبي).",
+        "de": "Wöchentlicher Stundenplan und Anfrage für eine Probestunde (Demo).",
+        "ru": "Недельное расписание и заявка на пробное занятие (демо)."
       },
       "path": "teklif-al",
       "icon": "calendar_month",
@@ -85,7 +97,9 @@
       "name": {
         "tr": "İletişim",
         "en": "Contact",
-        "ar": "اتصل بنا"
+        "ar": "اتصل بنا",
+        "de": "Kontakt",
+        "ru": "Контакты"
       },
       "status": "play",
       "id": "iletisim",
@@ -106,7 +120,9 @@
       "description": {
         "tr": "Adres, telefon ve çalışma saatleri.",
         "en": "Address, phone and opening hours.",
-        "ar": "العنوان والهاتف وساعات العمل."
+        "ar": "العنوان والهاتف وساعات العمل.",
+        "de": "Adresse, Telefon und Öffnungszeiten.",
+        "ru": "Адрес, телефон и часы работы."
       }
     }
   ],
