@@ -4,12 +4,16 @@
   "description": {
     "tr": "Kadife Dans Stüdyosu: Gaziantep’te salsa, bachata, Arjantin tangosu, çağdaş dans, hip-hop ve çocuk balesi. Haftalık programdan seans seçin, ilk deneme dersi ücretsiz. Demo site; içerik kurgusaldır.",
     "en": "Kadife Dance Studio: salsa, bachata, Argentine tango, contemporary dance, hip-hop and kids’ ballet in Gaziantep. Pick a session from the weekly schedule; the first trial class is free. Demo site; content is fictional.",
-    "ar": "استوديو كاديفه للرقص: سالسا وباتشاتا وتانغو أرجنتيني ورقص معاصر وهيب هوب وباليه للأطفال في غازي عنتاب. اختر حصة من البرنامج الأسبوعي، والدرس التجريبي الأول مجاني. موقع تجريبي؛ المحتوى افتراضي."
+    "ar": "استوديو كاديفه للرقص: سالسا وباتشاتا وتانغو أرجنتيني ورقص معاصر وهيب هوب وباليه للأطفال في غازي عنتاب. اختر حصة من البرنامج الأسبوعي، والدرس التجريبي الأول مجاني. موقع تجريبي؛ المحتوى افتراضي.",
+    "de": "Kadife Dans Stüdyosu: Salsa, Bachata, Argentinischer Tango, Contemporary, Hip-Hop und Kinderballett in Gaziantep. Wählen Sie eine Stunde aus dem Wochenplan; die erste Probestunde ist kostenlos. Demo-Website; Inhalte sind fiktiv.",
+    "ru": "Kadife Dans Stüdyosu: сальса, бачата, аргентинское танго, современный танец, хип-хоп и детский балет в Газиантепе. Выберите занятие в недельном расписании; первое пробное занятие бесплатно. Демо-сайт; содержание условное."
   },
   "keyword": {
     "tr": "dans stüdyosu, salsa kursu, tango dersi, çağdaş dans, çocuk balesi, düğün dansı",
     "en": "dance studio, salsa class, tango lesson, contemporary dance, kids ballet, wedding dance",
-    "ar": "استوديو رقص، دروس سالسا، دروس تانغو، رقص معاصر، باليه أطفال، رقصة الزفاف"
+    "ar": "استوديو رقص، دروس سالسا، دروس تانغو، رقص معاصر، باليه أطفال، رقصة الزفاف",
+    "de": "Tanzstudio, Salsakurs, Tangounterricht, zeitgenössischer Tanz, Kinderballett, Hochzeitstanz",
+    "ru": "танцевальная студия, курс сальсы, уроки танго, современный танец, детский балет, свадебный танец"
   },
   "category": "Kurumsal",
   "name": "Kadife Dans",
@@ -18,15 +22,27 @@
     "tr": true,
     "en": true,
     "ar": true,
-    "de": false,
-    "ru": false,
+    "de": true,
+    "ru": true,
     "es": false,
     "fr": false,
     "it": false,
     "ja": false,
     "zh": false,
     "ko": false,
-    "pt": false
+    "pt": false,
+    "fa": false,
+    "he": false,
+    "ur": false,
+    "nl": false,
+    "pl": false,
+    "uk": false,
+    "az": false,
+    "ka": false,
+    "el": false,
+    "bg": false,
+    "ro": false,
+    "hi": false
   },
   "logo": "logo.png",
   "multi": false,

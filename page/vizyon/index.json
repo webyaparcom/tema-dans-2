@@ -3,17 +3,23 @@
   "name": {
     "tr": "Vizyon",
     "en": "Vision",
-    "ar": "الرؤية"
+    "ar": "الرؤية",
+    "de": "Vision",
+    "ru": "Видение"
   },
   "description": {
     "tr": "Vizyonumuz",
     "en": "Our vision",
-    "ar": "رؤيتنا"
+    "ar": "رؤيتنا",
+    "de": "Unsere Vision",
+    "ru": "Наше видение"
   },
   "keyword": {
     "tr": "Vizyon",
     "en": "vision, our vision, goals",
-    "ar": "الرؤية, رؤيتنا, الأهداف"
+    "ar": "الرؤية, رؤيتنا, الأهداف",
+    "de": "Vision",
+    "ru": "Видение"
   },
   "path": "vizyon",
   "icon": "visibility",
@@ -29,12 +35,16 @@
   "text": {
     "tr": "<h2>Vizyonumuz</h2>\n<p>Şehrin her mahallesinden öğrencinin yılda bir kez sahneye çıktığı bir stüdyo olmak.</p>",
     "en": "<h2>Our vision</h2>\n<p>To be a studio where students from every neighbourhood go on stage once a year.</p>",
-    "ar": "<h2>رؤيتنا</h2>\n<p>أن نكون استوديو يصعد فيه طلاب من كل حي إلى المسرح مرة في السنة.</p>"
+    "ar": "<h2>رؤيتنا</h2>\n<p>أن نكون استوديو يصعد فيه طلاب من كل حي إلى المسرح مرة في السنة.</p>",
+    "de": "<h2>Unsere Vision</h2>\n<p>Ein Studio zu sein, in dem Schüler aus jedem Stadtteil einmal im Jahr auf die Bühne gehen.</p>",
+    "ru": "<h2>Наше видение</h2>\n<p>Стать студией, где ученики из каждого района города выходят на сцену раз в год.</p>"
   },
   "title": {
     "tr": "Vizyon",
     "en": "Vision",
-    "ar": "الرؤية"
+    "ar": "الرؤية",
+    "de": "Vision",
+    "ru": "Видение"
   },
   "date": "2026-11-16T18:02:14.459Z",
   "update": "2026-11-16T18:05:45.402Z",
